@@ -22,11 +22,11 @@
             <div class="mb-3 row">
 
                 <div class="row">
-                    <div class="col">
+                    <div class="col-sm-12 col-md-6">
                         <label for="first" class="form-label">First Name</label>
                         <input type="text" class="form-control" id="first" name="first">
                     </div>
-                    <div class="col">
+                    <div class="col-sm-12 col-md-6">
                         <label for="last" class="form-label col">Last Name</label>
                         <input type="text" class="form-control" id="last" name="last">
                     </div>
@@ -36,7 +36,7 @@
 
 
 
-                    <div class="col form-group">
+                    <div class="col-sm-12 col-md-6 form-group">
                         <label for="gender" class="control-label">Gender</label>
                         <select class="form-select" id="gender" name="gender">
                             <option value="1">Female</option>
@@ -44,20 +44,20 @@
                             <option value="3">Prefer Not To Say</option>
                         </select>
                     </div>
-                    <div class="col">
+                    <div class="col-sm-12 col-md-6">
                         <label for="phone" class="form-label">Phone Number</label>
                         <input type="tel" class="form-control" id="phone" name="phone" pattern="\d(3)-\d(3)-\d(4)"
-                            placeholder="123-456-7890">
+                            placeholder="63-456-7890">
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col">
+                    <div class="col-sm-12 col-md-6">
                         <label for="email" class="form-label">Email Address</label>
                         <input type="email" class="form-control" id="email" name="email" placeholder="me@example.com">
 
                     </div>
-                    <div class="col">
+                    <div class="col-sm-12 col-md-6">
                         <label for="dob">DOB</label>
                         <input class="form-control" type="date" id="dob" name="dob">
 
@@ -75,73 +75,74 @@
 
             <p class="mb-0 mt-4">Have you experienced any of the following symptoms? Check the respective box if yes.
             </p>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="feverChills" name="feverChills">
-                <label class="form-check-label" for="feverChills">
-                    Fever or chills
-                </label>
+            <div class="row">
+                <div class="form-check col-sm-12 col-md-6">
+                    <input class="form-check-input" type="checkbox" id="feverChills" name="feverChills">
+                    <label class="form-check-label" for="feverChills">
+                        Fever or chills
+                    </label>
+                </div>
+                <div class="form-check col-sm-12 col-md-6">
+                    <input class="form-check-input" type="checkbox" id="cough" name="cough">
+                    <label class="form-check-label" for="cough">
+                        Cough
+                    </label>
+                </div>
+                <div class="form-check col-sm-12 col-md-6">
+                    <input class="form-check-input" type="checkbox" id="breath" name="breath">
+                    <label class="form-check-label" for="breath">
+                        Shortness of breath or difficulty breathing
+                    </label>
+                </div>
+                <div class="form-check col-sm-12 col-md-6">
+                    <input class="form-check-input" type="checkbox" id="fatigue" name="fatigue">
+                    <label class="form-check-label" for="fatigue">
+                        Fatigue
+                    </label>
+                </div>
+                <div class="form-check col-sm-12 col-md-6">
+                    <input class="form-check-input" type="checkbox" id="muscleAche" name="muscleAche">
+                    <label class="form-check-label" for="muscleAche">
+                        Muscle or body aches
+                    </label>
+                </div>
+                <div class="form-check col-sm-12 col-md-6">
+                    <input class="form-check-input" type="checkbox" id="headache" name="headache">
+                    <label class="form-check-label" for="headache">
+                        Headache
+                    </label>
+                </div>
+                <div class="form-check col-sm-12 col-md-6">
+                    <input class="form-check-input" type="checkbox" id="smell" name="smell">
+                    <label class="form-check-label" for="smell">
+                        New loss of taste or smell
+                    </label>
+                </div>
+                <div class="form-check col-sm-12 col-md-6">
+                    <input class="form-check-input" type="checkbox" id="soreThroat" name="soreThroat">
+                    <label class="form-check-label" for="soreThroat">
+                        Sore throat
+                    </label>
+                </div>
+                <div class="form-check col-sm-12 col-md-6">
+                    <input class="form-check-input" type="checkbox" id="congestion" name="congestion">
+                    <label class="form-check-label" for="congestion">
+                        Congestion or runny nose
+                    </label>
+                </div>
+                <div class="form-check col-sm-12 col-md-6">
+                    <input class="form-check-input" type="checkbox" id="nausea" name="nausea">
+                    <label class="form-check-label" for="nausea">
+                        Nausea or vomiting
+                    </label>
+                </div>
+                <div class="form-check col-sm-12 col-md-6">
+                    <input class="form-check-input" type="checkbox" id="diarrhea" name="breatdiarrheah">
+                    <label class="form-check-label" for="diarrhea">
+                        Diarrhea
+                    </label>
+                </div>
             </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="cough" name="cough">
-                <label class="form-check-label" for="cough">
-                    Cough
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="breath" name="breath">
-                <label class="form-check-label" for="breath">
-                    Shortness of breath or difficulty breathing
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="fatigue" name="fatigue">
-                <label class="form-check-label" for="fatigue">
-                    Fatigue
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="muscleAche" name="muscleAche">
-                <label class="form-check-label" for="muscleAche">
-                    Muscle or body aches
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="headache" name="headache">
-                <label class="form-check-label" for="headache">
-                    Headache
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="smell" name="smell">
-                <label class="form-check-label" for="smell">
-                    New loss of taste or smell
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="soreThroat" name="soreThroat">
-                <label class="form-check-label" for="soreThroat">
-                    Sore throat
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="congestion" name="congestion">
-                <label class="form-check-label" for="congestion">
-                    Congestion or runny nose
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="nausea" name="nausea">
-                <label class="form-check-label" for="nausea">
-                    Nausea or vomiting
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="diarrhea" name="breatdiarrheah">
-                <label class="form-check-label" for="diarrhea">
-                    Diarrhea
-                </label>
-            </div>
-
             <hr>
             <h3>Other Questions</h3>
 
