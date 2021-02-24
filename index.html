@@ -25,6 +25,7 @@
                     <div class="col-sm-12 col-md-6">
                         <label for="first" class="form-label">First Name</label>
                         <input type="text" class="form-control" id="first" name="first">
+                        
                     </div>
                     <div class="col-sm-12 col-md-6">
                         <label for="last" class="form-label col">Last Name</label>
@@ -60,6 +61,8 @@
                     <div class="col-sm-12 col-md-6">
                         <label for="dob">DOB</label>
                         <input class="form-control" type="date" id="dob" name="dob">
+                        <p id="dobError" class="my-2 alert alert-danger" style="display: none;">Birthday must be before
+                            today and not blank. </p>
 
                     </div>
                 </div>
@@ -430,9 +433,12 @@
             <label for="temp" class="form-label">Current temperature (F)</label>
             <input type="number" class="form-control" id="temp" name="temp" min="1">
 
-            <p id="hasError" class="alert alert-danger my-2" style="display: none;">Please make sure all fields are complete and do not contain invalid charactars such as '(&, <, >, #, !, `, ", ~)'. </p>
+            <p id="hasError" class="alert alert-danger my-2" style="display: none;">Please make sure all fields are
+                complete and do not contain invalid charactars such as '(&, <,>, #, !, `, ", ~)'. </p>
 
-            <button type="button" class="btn btn-primary w-100 my-2" onclick="submitForm()">Submit</button>            <p id="hasError" class="alert alert-danger" style="display: none;">Please make sure all fields are complete and do not contain invalid charactars such as '(&, <, >, #, !, `, ", ~)'. </p>
+            <button type="button" class="btn btn-primary w-100 my-2" onclick="submitForm()">Submit</button>
+            <p id="hasError" class="alert alert-danger" style="display: none;">Please make sure all fields are complete
+                and do not contain invalid charactars such as (&, <,>, #, !, `, ", ~) </p>
 
             <hr>
         </form>

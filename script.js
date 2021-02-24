@@ -47,12 +47,15 @@ function submitForm() {
         console.log('invalid', document.getElementById('dob').value)
         markInvalid(document.getElementById('dob'))
         hasError = true;
+        document.getElementById('dobError').style.display = 'block'
 
     }
     else {
         console.log('valid', document.getElementById('dob').value)
 
         markValid(document.getElementById('dob'))
+        document.getElementById('dobError').style.display = 'none'
+
     }
 
 
